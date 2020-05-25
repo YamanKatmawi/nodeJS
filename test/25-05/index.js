@@ -11,3 +11,8 @@ fs.readFile("./longText.txt", "utf8", function (err, data) {
   console.log(data);
 });
 console.log("hole");
+fs.writeFile("new.txt", "this is create file in nodeJs", (err) => {
+  if (err) throw err;
+  console.log("************* Hi ************");
+});
+console.log("Hi");
